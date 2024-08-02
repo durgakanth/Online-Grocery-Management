@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="products.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f84e312a46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="d-flex flex-row">
+                    <img src="fl1.jpg" class="food-munch-logo" />
+
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="Navitem1" href="#wcuSection"> <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-link active" id="Navitem1" href="#wcuSection">
+                        <i class="fas fa-location"></i>Locate me<span class="sr-only">(current)</span>
+                    </a>
+
+                    <a class="nav-link" id="Navitem2"
+                        href="C:\Users\sahit\OneDrive\Desktop\New folder\Store.html #exploreSection">
+                        <i class="fas fa-compass"></i> Explore
+                    </a>
+
+                    <a class="nav-link" id="Navitem3"
+                        href="C:\Users\sahit\OneDrive\Desktop\New folder\Store.html #deliverypaymentSection">
+                        <i class="fas fa-truck"></i> Delivery & Payment
+                    </a>
+
+                    <a class="nav-link" id="Navitem4" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i> My Cart
+                    </a>
+
+                    <a class="nav-link" id="Navitem5"
+                        href="C:\Users\sahit\OneDrive\Desktop\New folder\Store.html #followSection">
+                        <i class="fab fa-twitter"></i> Follow Us
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="explore-menu-section pb-5 pt-5" id="exploreSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Chocolates & Deserts</h1>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/11020a.jpg?ts=1680599247"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Cadbury Minis</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            135/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Cadbury Minis',135)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/365339a.jpg?ts=1681372155"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Gems</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            10/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Gems',10)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/19501a.jpg?ts=1687436951"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Amul Dark Chocolate</h1>
+                            <p class="quantity">1</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            110/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Amul Dark Choclate',110)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/19825a.jpg?ts=1688625385"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Kinder Joy</h1>
+                            <p class="quantity">1</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            44/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Kinder joy',44)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/480011a.jpg?ts=1686564694"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Twix</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            54/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Twix',54)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/249288a.jpg?ts=1688628706"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Yoga Bar</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            38/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Yoga Bar',38)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/415759a.jpg?ts=1687328290"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Hershey's Syrup</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            220/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Hersheys Syrup',220)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/458210a.jpg?ts=1687500593"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Nutella</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            709/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Nutella',709)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/458210a.jpg?ts=1687500593"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Swiss Roll</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            51/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Swiss Roll',51)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/519586a.jpg"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Chocolate Wafers</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            27/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Choclate Wafers',27)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/23790a.jpg?ts=1673858845"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">5 Star Minis</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            135/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('5 Star Minis',135)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/383615a.jpg?ts=1673009278"
+                                class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <h1 class="menu-item-heading">Kit Kat Minis</h1>
+                            <p class="quantity">1kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            120/-
+                            <div>
+                                <button class="custom-button-items-page"
+                                    onclick="addToCart('Kit Kat Minis',120)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <a href="store.php"><button class="custom-button">Home</button></a>
+                <a href="Store.php    #exploreSection"><button class="custom-button">Explore</button></a>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div id="cart"></div>
+    <div id="totalPrice"></div>
+    <!-- Place this JavaScript code inside the <script> tag -->
+<script src="cart1.js"></script>
+
+
+</body>
+
+</html>

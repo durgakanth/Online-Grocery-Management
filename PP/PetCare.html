@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="products.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f84e312a46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="d-flex flex-row">
+                <img src="fl1.jpg" class="food-munch-logo" />
+                
+            </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="Navitem1" href="#wcuSection"> <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" id="Navitem1" href="#wcuSection">
+                        <i class="fas fa-location"></i>Locate me<span class="sr-only">(current)</span>
+                      </a>
+                      
+                      <a class="nav-link" id="Navitem2" href="C:\Users\sahit\OneDrive\Desktop\New folder\Store.html #exploreSection">
+                        <i class="fas fa-compass"></i> Explore
+                      </a>
+                      
+                      <a class="nav-link" id="Navitem3" href="C:\Users\sahit\OneDrive\Desktop\New folder\Store.html #deliverypaymentSection">
+                        <i class="fas fa-truck"></i> Delivery & Payment
+                      </a>
+                      
+                      <a class="nav-link" id="Navitem4" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i> My Cart
+                      </a>
+                      
+                      <a class="nav-link" id="Navitem5" href="C:\Users\sahit\OneDrive\Desktop\New folder\Store.html #followSection">
+                        <i class="fab fa-twitter"></i> Follow Us
+                      </a>
+                      
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    
+<div class="explore-menu-section pb-5 pt-5" id="exploreSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Pet Care</h1>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/12476a.jpg?ts=1687948388" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Adult Dog Food</h1>
+                        <p class="quantity">1Kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            339/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Adult Dog Food',339)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+                
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/140153a.jpg?ts=1686225266" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Whiskas Adult Cat Food</h1>
+                        <p class="quantity">1Kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            2236/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Whiskas adult Cat Food',223)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/525016a.jpg" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Pet Wipes</h1>
+                        <p class="quantity">1Pack</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            299/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Pet Wipes',299)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/491751a.jpg?ts=1687501899" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Pet Supplement</h1>
+                        <p class="quantity">200ml</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            170/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Pet Supplement',170)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/525633a.jpg" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Food Scoop</h1>
+                        <p class="quantity">1Item</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            200/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Food Scoop',200)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/525643a.jpg" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Rope Leash</h1>
+                        <p class="quantity">1Item</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            510/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Rope Leash',510)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/525659a.jpg" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Cat Litter</h1>
+                        <p class="quantity">1Kg</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            400/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Cat Litter',400)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/491952a.jpg?ts=1687335695" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Bone Chew Toy</h1>
+                        <p class="quantity">1Item</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            285/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Bone Chew Toy',285)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/464252a.jpg?ts=1688444646" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Chew Bar Dog Treat</h1>
+                        <p class="quantity">1</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            280/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Chew BAr dog treat',280)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/480283a.jpg?ts=1687333261" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Purrree Cat Treat</h1>
+                        <p class="quantity">1g</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            120/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Cat traeat',120)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/491940a.jpg?ts=1688444651" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Pet Spike Ball</h1>
+                        <p class="quantity">1Item</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            167/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Pet Spike Ball',167)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card mb-3 p-3 shadow">
+                        <div class="d-flex flex-row justify-content-center">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/491945a.jpg?ts=1687335695" class="menu-item-image" \>
+                        </div>
+                        <div class="d-flex flex-row">
+                        <h1 class="menu-item-heading">Pet Shampoo</h1>
+                        <p class="quantity">1l</p>
+                        </div>
+                        <div class="price_selection d-flex flex-row ">
+                            256/-
+                            <div>
+                                <button class="custom-button-items-page" onclick="addToCart('Pet Shampoo',256)">Add</button>
+        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <a href="Store.php">   <button class="custom-button">Home</button></a>
+                 <a href="Store.php  #exploreSection"> <button class="custom-button">Explore</button></a>
+               </div>
+   
+
+                
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Add this div to display cart items -->
+
+    <div id="cart"></div>
+    <div id="totalPrice"></div>
+    <script src="cart1.js"></script>
+
+    
+  
+
+</body>
+
+</html>
