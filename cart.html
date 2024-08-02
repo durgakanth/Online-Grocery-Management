@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart Items</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #cart {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #cart ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #cart li {
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    #cart li:last-child {
+      border-bottom: none;
+    }
+
+    #totalPrice {
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    #totalPrice p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .payment{
+      background-color: purple;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      padding: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cart Items</h1>
+  <div id="cart"></div>
+  <div id="totalPrice"></div>
+  <div class="d-flex flex-row justify-content-center">
+    <button class="payment" onclick="clearCart()">CLEAR</button>
+
+</div><br><br><br>
+<center>
+<div >
+  <a href="payment.html"><button class="payment">proceed &Pay</button></a>
+</div></center>
+
+
+  <!-- Add the script at the end of the <body> tag -->
+  <script>
+    function showCart() {
+      // Get the cart items and total price from local storage
+      let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+      let totalPrice = parseFloat(localStorage.getItem('totalPrice')) || 0;
+
+      let cartContainer = document.getElementById('cart');
+      let totalPriceContainer = document.getElementById('totalPrice');
+
+      // Clear the existing content in the cart and total price containers
+      cartContainer.innerHTML = '';
+      totalPriceContainer.innerHTML = '';
+
+      // Display the cart items in the cart container
+      if (cartItems.length === 0) {
+        cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+      } else {
+        let cartList = document.createElement('ul');
+        cartItems.forEach((item) => {
+          let cartItem = document.createElement('li');
+          cartItem.textContent = `${item.name} - ${item.price}/-`;
+          cartList.appendChild(cartItem);
+        });
+        cartContainer.appendChild(cartList);
+      }
+
+      // Display the total price
+      totalPriceContainer.innerHTML = `<p>Total Price: ${totalPrice.toFixed(2)}/-</p>`;
+    }
+
+    // Call the showCart function when the page loads
+    window.onload = showCart;
+    function clearCart() {
+    // Clear the cart in local storage
+    localStorage.removeItem('cart');
+    
+    // Reset the total price to zero in local storage
+    localStorage.setItem('totalPrice', 0);
+    
+    // Update the cart display
+    showCart();
+  }
+  
+  
+  </script>
+</body>
+</html>
